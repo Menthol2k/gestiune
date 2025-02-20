@@ -19,7 +19,7 @@ class CommissionSeeder extends Seeder
         for ($i = 0; $i < 15; $i++) {
             $commission = Commission::create([
                 'client_id' => rand(1, 10),
-                'created_by' => rand(1, 5),
+                'created_by' => 1,
                 'number' => $i + 1,
                 'year' => '2025',
                 'completed' => now()->subDay(rand(1, 20))->format('Y-m-d'),
